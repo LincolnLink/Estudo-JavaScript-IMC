@@ -1,11 +1,17 @@
-var pacientes = document.getElementsByClassName("paciente")
 
-percorreArray(pacientes, function(trPaciente){		
+function cla(){ 
+	var pacientes = document.getElementsByClassName("paciente")
 
-		var tdImc = trPaciente.getElementsByClassName("info-imc")[0];
-		var pacienteAtual = pessoa(trPaciente);
+	percorreArray(pacientes, function(trPaciente){		
 
-		var imc = pacienteAtual.calculaIMC();		
-		tdImc.textContent = imc;
-	}
-);
+			var tdImc = trPaciente.getElementsByClassName("info-imc")[0];
+			var pacienteAtual = pessoa(trPaciente);
+
+			var imc = pacienteAtual.calculaIMC();		
+			tdImc.textContent = imc;
+		}
+	);
+};
+
+
+
