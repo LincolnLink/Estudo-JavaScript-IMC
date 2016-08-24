@@ -1,5 +1,5 @@
 
-function cla(){ 
+function calculaTodosIMC(){
 	var pacientes = document.getElementsByClassName("paciente")
 
 	percorreArray(pacientes, function(trPaciente){		
@@ -13,5 +13,12 @@ function cla(){
 	);
 };
 
+var botao = document.getElementById("calcula-imcs");
+/*
+botao.onclick = calculaTodosIMC;*/
 
+botao.addEventListener("click", calculaTodosIMC);
+botao.addEventListener("click", function(){
+	console.log("Texto qual quer!")
+})
 
